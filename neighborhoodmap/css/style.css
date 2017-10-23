@@ -1,0 +1,83 @@
+body,
+html {
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Sans-serif;
+}
+
+#map {
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+
+.SearchBar {
+	position: absolute;
+	z-index: 2;
+	right: 10px;
+	top: 40px;
+	background-color: black;
+	color: white;
+	width: 300px;
+	border: solid 2px black;
+}
+
+.SearchBarHeading {
+	margin-left: 20px;
+}
+
+.SearchBox {
+	position: absolute;
+	z-index: 2;
+	padding-left: 10px;
+	color: black;
+}
+
+.SearchBox input {
+	width: 250px;
+	border-radius: 5px;
+	box-shadow: solid 5px 5px 5px white;
+}
+
+.Scroll-list {
+	max-height: 300px;
+	overflow: scroll;
+	margin-top: 40px;
+	right:20px;
+	z-index: 2;
+}
+
+li {
+	cursor: pointer;
+	list-style: none;
+	padding: 2px;
+}
+
+li:hover {
+	background-color: white;
+	color: black;
+	font-weight: bold;
+}
+
+.ToggleButton {
+	position: absolute;
+	z-index: 2;
+	right: 10px;
+	top: 10px;
+}
+
+#toggleNav {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+}
+
+#toggleNav:hover {
+    background-color: white;
+    color: black;
+}

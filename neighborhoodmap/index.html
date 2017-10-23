@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div id = "map"></div>
+	<div class="ToggleButton"><button id="toggleNav" data-bind="click: toggleNav"><strong>show/hide navbar</strong></button></div>
+	<div class="SearchBar" data-bind="visible: showNav">		
+		<h2 class="SearchBarHeading">Neighborhood Map</h2>
+		<div class="SearchBox">
+	        <input placeholder="search from list of markers....." type="search" data-bind="textInput: query"></input>
+		</div>
+		<div class="Scroll-list">
+		    <div>
+	       		<ul data-bind="foreach: search">
+	        		<li data-bind="text: title, click: $parent.openInfoWindow"></li>
+	     		</ul>
+	        </div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/knockout-3.3.0.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAb-7SWeuMIrYFKcK8w165XCGcTVI3y0NA&v=3&callback=initMap" onerror="error()"></script>
+</body>
+</html>
