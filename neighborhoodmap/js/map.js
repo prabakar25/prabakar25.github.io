@@ -153,7 +153,7 @@ function populateInfoWindow(marker , infoWindow) {
 	infoWindow.marker = marker;
 
 	//url to get weather report from apixu
-	var apiUrl = "http://api.apixu.com/v1/current.json?key=5e1425ca389a40ecabf184728172210&q=" + marker.lat + "," + marker.lng;
+	var apiUrl = "https://api.apixu.com/v1/current.json?key=5e1425ca389a40ecabf184728172210&q=" + marker.lat + "," + marker.lng;
 	//ajax request 
 	$.getJSON(apiUrl).done(function(marker) { 
        		self.localTime = marker.location.localtime;
